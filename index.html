@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Diagnostig Test</title>
+    <script>
+        function add() {
+            var addend1, addend2, sum;
+            addend1 = Number(document.getElementById(txtAddend1).value);
+            addend2 = Number(document.getElementById(txtAddend2).value);
+            sum = addend1 + addend2;
+            document.getElementById(txtSum).value = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="form-c">
+        <form>
+            <input id="txtAddend1" type="number" placeholder="Enter first number" />
+            <input id="txtAddend2" type="number" placeholder="Enter second numbe" />
+            <input id="add" type="submit" onclick="add()" value="Add" />
+            <input id="txtSum" type="number" placeholder="Result" />
+        </form>
+    </div>
+</body>
+
+</html>
